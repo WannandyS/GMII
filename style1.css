@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    width: 50px;
+    margin: 4px 14px;
+    height: 50px;
+}
+
+.top-left h3 {
+    margin-top: -55px;
+    margin-left: 75px;
+    text-align: justify;
+}
+
+.top-right {
+    float: right;
+    margin-top: -40px;
+    margin-right: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+li a:hover {
+    background-color:lightgrey;
+}
