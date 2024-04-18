@@ -1,24 +1,36 @@
 body {
     background-color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
+    display: flex;
+    flex-direction: row;
     width: 50px;
-    margin: 4px 14px;
+    float: left;
+    margin: 10px 10px 10px 20px;
     height: 50px;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .top-left h3 {
-    margin-top: -55px;
-    margin-left: 75px;
     text-align: justify;
+    margin-left: 80px;
+    margin-top: 10px;
 }
 
 .top-right {
     float: right;
-    margin-top: -40px;
-    margin-right: 200px;
+    margin-top: 12px;
+    margin-right: 240px;
+    font-weight: 500;
 }
 
 nav ul {
@@ -44,4 +56,129 @@ nav li a {
 
 li a:hover {
     background-color:lightgrey;
+}
+
+/*beranda*/
+.bannerberanda {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    margin-top: -8px;
+    text-align: center;
+}
+
+.bannerberanda > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+.bannerberanda > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 25px;
+}
+
+.deskripsi {
+    display: flex;
+    justify-content: center;
+}
+
+.deskripsi > h3 {
+
+}
+
+.lokasi > button, h3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.lokasi > h3 {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.link {
+    width: 1150px;
+    height: 50px;
+    color: yellow;
+    text-decoration: none;
+}
+
+.peta {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 90%;
+    height: 530px;
+    position: relative;
+    margin-bottom: 200px;
+    margin-top: 90px;
+}
+
+/*warta*/
+.bannerwarta {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    margin-top: -8px;
+    text-align: center;
+}
+
+.bannerwarta > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+.bannerwarta > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 25px;
+}
+
+.kontener {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.isiwarta img {
+    width: 200px;
+    height: 280px;
+}
+
+.isiwarta a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.isiwarta {
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 1px 1px 10px 4px lightgray;
+}
+
+/*kegiatan*/
+.bannerkegiatan {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    margin-top: -8px
 }
