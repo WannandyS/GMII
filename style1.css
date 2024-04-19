@@ -5,6 +5,20 @@ body {
     margin: 0;
 }
 
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -18,6 +32,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
 }
 
 .top-left h3 {
@@ -38,7 +57,6 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
 }
 
 nav li {
@@ -61,10 +79,11 @@ li a:hover {
 /*beranda*/
 .bannerberanda {
     width: 100%;
-    height: 280px;
+    height: 700px;
     position: relative;
     margin-top: -8px;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .bannerberanda > img {
@@ -74,53 +93,107 @@ li a:hover {
     object-position: 0 50%;
 }
 
+.bannerberanda > .teks1, .teks2, h1 {
+    text-shadow: 5px;
+}
+
+.teks1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -190%);
+    color:white;
+    font-size: 45px;
+}
+
+.teks2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    color:white;
+    font-size: 30px;
+}
+
 .bannerberanda > h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
     color:white;
-    font-size: 25px;
+    font-size: 50px;
+    font-family: ;
 }
 
 .deskripsi {
     display: flex;
-    justify-content: center;
-}
-
-.deskripsi > h3 {
-
-}
-
-.lokasi > button, h3 {
-    display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
-.lokasi > h3 {
+.teks {
+    flex-direction: column;
+    display: flex;
+    margin-left: 45px;
+}
+
+.teks > h2 {
+    margin-top: 20px;
+}
+
+.teks > p {
+    text-align: justify;
+    font-size: 16px;
+    margin-right: 47px;
+    line-height: 2;
+}
+
+.deskripsi > img {
+    width: 1000px;
+    height: 500px;
+    border-radius: 25px;
+    margin-left: 47px;
+}
+
+.lokasi {
+    display: flex;
+    flex-direction: column;
+}
+
+.lokasi > h2 {
     text-align: center;
     justify-content: center;
     position: relative;
+    margin-top: 100px;
+}
+
+.lokasi > .alamat, .namajln, .katakanpeta {
+    margin-left: 210px;
+}
+
+.lokasi > .namajln, .katakanpeta {
+    margin-top: -15px;
 }
 
 .link {
-    width: 1150px;
-    height: 50px;
-    color: yellow;
     text-decoration: none;
+    color: blue;
 }
 
 .peta {
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 iframe {
-    width: 90%;
-    height: 530px;
+    width: 55%;
+    height: 430px;
     position: relative;
-    margin-bottom: 200px;
-    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-top: -90px;
+    border-radius: 25px;
+    margin-right: 130px;
 }
 
 /*warta*/
