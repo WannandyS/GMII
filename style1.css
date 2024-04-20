@@ -196,29 +196,82 @@ iframe {
     margin-right: 130px;
 }
 
+/*tentang kami*/
+.top-page {
+
+}
+
+.utama {
+    display: flex;
+    flex-direction: column;
+}
+
+.siapa > h3 {
+    border-bottom: 2px solid black;
+    margin: 34px 100px 0px 100px;
+    padding-bottom: 9px;
+}
+
+.siapa > p {
+    margin: 3px 100px 0px 100px;
+}
+
+.siapa, .visi, .misi, .anggota {
+    margin-top: 35px;
+}
+
+.visi > h3 {
+    border-bottom: 2px solid black;
+    margin: 34px 100px 0px 100px;
+    padding-bottom: 9px;
+}
+
+.visi > li {
+    margin: 3px 100px 0px 100px;
+}
+
+.misi > h3 {
+    border-bottom: 2px solid black;
+    margin: 34px 100px 0px 100px;
+    padding-bottom: 9px;
+}
+
+.misi > li {
+    margin: 3px 100px 0px 100px;
+}
+
+.anggota > h3 {
+    border-bottom: 2px solid black;
+    margin: 34px 100px 0px 100px;
+    padding-bottom: 9px;
+}
+
+.anggota
+
 /*warta*/
 .bannerwarta {
     width: 100%;
-    height: 280px;
+    height: 100%;
     position: relative;
     margin-top: -8px;
-    text-align: center;
 }
 
 .bannerwarta > img {
     width: 100%;
-    height: 100%;
+    height: 280px;
     object-fit: cover;
+    margin-top: -8px;
     object-position: 0 50%;
 }
 
 .bannerwarta > h1 {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
     font-size: 25px;
+    text-align: center;
 }
 
 .kontener {
