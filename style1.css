@@ -90,7 +90,8 @@ li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0 50%;
+    object-position: 0 80%;
+    filter: brightness(80%);
 }
 
 .bannerberanda > .teks1, .teks2, h1 {
@@ -101,7 +102,7 @@ li a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -190%);
+    transform: translate(-50%, -200%);
     color:white;
     font-size: 45px;
 }
@@ -110,7 +111,7 @@ li a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 70%);
+    transform: translate(-50%, 50%);
     color:white;
     font-size: 30px;
 }
@@ -119,7 +120,7 @@ li a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -80%);
     color:white;
     font-size: 50px;
     font-family: ;
@@ -168,11 +169,12 @@ li a:hover {
     margin-top: 100px;
 }
 
-.lokasi > .alamat, .namajln, .katakanpeta {
+.lokasi > .alamat, .namajln, .katakanpeta, .kontak, .nomor {
+    margin-top: 5px;
     margin-left: 210px;
 }
 
-.lokasi > .namajln, .katakanpeta {
+.lokasi > .namajln, .katakanpeta, .nomor {
     margin-top: -15px;
 }
 
@@ -191,14 +193,42 @@ iframe {
     height: 430px;
     position: relative;
     margin-bottom: 100px;
-    margin-top: -90px;
+    margin-top: -150px;
     border-radius: 25px;
     margin-right: 130px;
+    border: none;
 }
 
 /*tentang kami*/
 .top-page {
+    width: 100%;
+    height: 280px;
+    margin-top: -8px;
+}
+.top-page > img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: 0 35%;
+    filter: brightness(80%);
+}
 
+.top-page > h1 {
+    position: absolute;
+    top: 20%;
+    left: 14.6%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+}
+
+.top-page > h2 {
+    position: absolute;
+    top: 26.2%;
+    left: 24.2%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
 }
 
 .utama {
@@ -209,11 +239,12 @@ iframe {
 .siapa > h3 {
     border-bottom: 2px solid black;
     margin: 34px 100px 0px 100px;
-    padding-bottom: 9px;
+    padding-bottom: 6px;
 }
 
 .siapa > p {
     margin: 3px 100px 0px 100px;
+    text-align: justify;
 }
 
 .siapa, .visi, .misi, .anggota {
@@ -222,31 +253,72 @@ iframe {
 
 .visi > h3 {
     border-bottom: 2px solid black;
-    margin: 34px 100px 0px 100px;
-    padding-bottom: 9px;
+    margin: 50px 100px 0px 100px;
+    padding-bottom: 6px;
 }
 
 .visi > li {
-    margin: 3px 100px 0px 100px;
+    margin: 10px 100px 10px 100px;
 }
 
 .misi > h3 {
     border-bottom: 2px solid black;
-    margin: 34px 100px 0px 100px;
-    padding-bottom: 9px;
+    margin: 50px 100px 0px 100px;
+    padding-bottom: 6px;
 }
 
 .misi > li {
-    margin: 3px 100px 0px 100px;
+    margin: 10px 100px 10px 100px;
+}
+
+.anggota {
+    display: flex;
+    flex-direction: column;
 }
 
 .anggota > h3 {
     border-bottom: 2px solid black;
-    margin: 34px 100px 0px 100px;
+    margin: 80px 100px 0px 100px;
     padding-bottom: 9px;
 }
 
-.anggota
+.pengurus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    align-self: center;
+    gap: 55px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+
+.nama-gelar {
+    display: flex;
+    flex-direction: column;
+}
+
+.nama-gelar > img {
+    width: 220px;
+    height: 260px;
+}
+
+.nama-gelar > h4, i {
+    text-align: center;
+}
+
+.nama-gelar > h4 {
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+.nama-gelar > i {
+    margin-top: -15px;
+    font-size: 12px;
+    color: #2E8FD5;
+    margin-bottom: 20px;
+}
 
 /*warta*/
 .bannerwarta {
@@ -262,11 +334,12 @@ iframe {
     object-fit: cover;
     margin-top: -8px;
     object-position: 0 50%;
+    filter: brightness(80%);
 }
 
 .bannerwarta > h1 {
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
@@ -304,13 +377,18 @@ iframe {
 /*kegiatan*/
 .bannerkegiatan {
     width: 100%;
-    height: 280px;
+    height: 700px;
+    position: relative;
     margin-top: -8px;
+    text-align: center;
 }
+
 .bannerkegiatan > img {
     width: 100%;
-    height: 280px;
+    height: 100%;
     object-fit: cover;
+    object-position: 0 80%;
+    filter: brightness(80%);
 }
 
 .jadwalkegiatan {
@@ -386,6 +464,7 @@ iframe {
     width: 980px;
     margin-left: 300px;
     margin-top: -20px;
+    margin-bottom: 40px;
 }
 
 .program-item {
