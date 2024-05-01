@@ -294,7 +294,7 @@ iframe {
     flex-wrap: wrap;
     max-width: 1500px;
     align-self: center;
-    gap: 55px;
+    gap: 100px;
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 80px;
@@ -418,6 +418,11 @@ iframe {
     justify-content: center;
 }
 
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
 .left > img {
     height: 200px;
     width: 365px;
@@ -537,7 +542,7 @@ iframe {
     height: 280px;
     object-fit: cover;
     margin-top: -8px;
-    object-position: 0 50%;
+    object-position: 0 60%;
     filter: brightness(80%);
 }
 
@@ -547,7 +552,7 @@ iframe {
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -578,7 +583,7 @@ iframe {
     height: 280px;
     object-fit: cover;
     margin-top: -8px;
-    object-position: 0 50%;
+    object-position: 0 60%;
     filter: brightness(80%);
 }
 
@@ -588,7 +593,7 @@ iframe {
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -658,7 +663,7 @@ iframe {
     height: 280px;
     object-fit: cover;
     margin-top: -8px;
-    object-position: 0 50%;
+    object-position: 0 60%;
     filter: brightness(80%);
 }
 
@@ -668,7 +673,7 @@ iframe {
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -717,7 +722,7 @@ iframe {
     height: 280px;
     object-fit: cover;
     margin-top: -8px;
-    object-position: 0 50%;
+    object-position: 0 60%;
     filter: brightness(80%);
 }
 
@@ -727,7 +732,7 @@ iframe {
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
 }
 
