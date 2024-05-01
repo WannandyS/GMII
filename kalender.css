@@ -1,0 +1,82 @@
+
+}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: 100hv;
+    background-image: url(gambar\ 2.jpg);
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(gambar\ 2.jpg);
+}
+}
+.wrapper{
+    width: 2000px;
+    height: 500px;
+    background: #fcfafa;
+    color: black;
+
+}
+}
+.calendar {
+    max-width: 300px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1eded;
+    padding: 10px;
+    margin-bottom: 20p;
+}
+
+.month-name {
+    font-size: 20px;
+    align-items: center;
+}
+
+
+
+.weekdays {
+    display: flex;
+    text-align: center;
+}
+
+.weekdays div {
+    width: 14.30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.days div {
+    width: 14.80%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+}
