@@ -383,18 +383,28 @@ iframe {
 /*kegiatan*/
 .bannerkegiatan {
     width: 100%;
-    height: 700px;
+    height: 100%;
     position: relative;
     margin-top: -8px;
-    text-align: center;
 }
 
 .bannerkegiatan > img {
     width: 100%;
-    height: 100%;
+    height: 280px;
     object-fit: cover;
-    object-position: 0 80%;
-    filter: brightness(70%);
+    margin-top: -8px;
+    object-position: 0 50%;
+    filter: brightness(80%);
+}
+
+.bannerkegiatan > h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 25px;
+    text-align: center;
 }
 
 .jadwalkegiatan {
