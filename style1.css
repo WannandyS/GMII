@@ -39,6 +39,25 @@ nav {
     background-color: white;
 }
 
+nav .popup-login {
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0158C1;
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .popup-login:hover {
+    background: #0158C1;
+    color: white;
+}
+
 .top-left h3 {
     text-align: justify;
     margin-left: 80px;
