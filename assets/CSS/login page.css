@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: dodgerblue;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper-login {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrapper-register {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    color: white;
+    background: #0158C1;
+    font-size: 32px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box-register {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box-register h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box-login {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box-login h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.form-input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.form-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 0 35px 0 5px;
+}
+
+.form-input label:focus~label,
+.form-input input:valid~label {
+    top: -5px;
+}
+
+.form-input .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+    color: black;
+    line-height: 57px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #0158C1;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-link,
+.login-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.login-link a:hover,
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.login-link p a,
+.register-link p a {
+    font-weight: bold;
+}
+
+.login-link p a:hover,
+.register-link p a:hover {
+    text-decoration: underline;
+}
