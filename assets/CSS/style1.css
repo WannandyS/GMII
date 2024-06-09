@@ -181,25 +181,22 @@ li a:hover {
 .lokasi {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .lokasi > h2 {
     text-align: center;
     justify-content: center;
     position: relative;
-    margin-top: 100px;
 }
 
-.lokasi > .alamat, .namajln, .katakanpeta, .kontak, .nomor {
-    margin-top: 5px;
+.kiri > p {
     margin-left: 210px;
+    line-height: 8px;
 }
 
-.lokasi > .namajln, .katakanpeta, .nomor {
-    margin-top: -15px;
-}
-
-.lokasi > .alamat, .kontak {
+.alamat-kontak {
     font-weight: bold;
 }
 
@@ -208,7 +205,7 @@ li a:hover {
     color: blue;
 }
 
-.peta {
+.kanan {
     display: flex;
     justify-content: right;
 }
@@ -217,8 +214,7 @@ iframe {
     width: 55%;
     height: 430px;
     position: relative;
-    margin-bottom: 100px;
-    margin-top: -150px;
+    margin-top: -160px;
     border-radius: 25px;
     margin-right: 130px;
     border: none;
@@ -230,6 +226,7 @@ iframe {
     height: 280px;
     margin-top: -8px;
 }
+
 .top-page > img {
     width: 100%;
     height: 280px;
@@ -261,38 +258,21 @@ iframe {
     flex-direction: column;
 }
 
-.siapa > h3 {
-    border-bottom: 2px solid black;
-    margin: 34px 100px 0px 100px;
-    padding-bottom: 6px;
-}
-
-.siapa > p {
-    margin: 3px 100px 0px 100px;
-    text-align: justify;
-}
-
-.siapa, .visi, .misi, .anggota {
+.subutama, .anggota {
     margin-top: 35px;
 }
 
-.visi > h3 {
+.subutama > h3 {
     border-bottom: 2px solid black;
     margin: 50px 100px 0px 100px;
     padding-bottom: 6px;
 }
 
-.visi > li {
+.subutama > p {
     margin: 10px 100px 10px 100px;
 }
 
-.misi > h3 {
-    border-bottom: 2px solid black;
-    margin: 50px 100px 0px 100px;
-    padding-bottom: 6px;
-}
-
-.misi > li {
+.subutama > li {
     margin: 10px 100px 10px 100px;
 }
 
@@ -345,15 +325,14 @@ iframe {
     margin-bottom: 20px;
 }
 
-/*warta*/
-.bannerwarta {
+.bannerutama {
     width: 100%;
     height: 100%;
     position: relative;
     margin-top: -8px;
 }
 
-.bannerwarta > img {
+.bannerutama > img {
     width: 100%;
     height: 280px;
     object-fit: cover;
@@ -362,7 +341,7 @@ iframe {
     filter: brightness(80%);
 }
 
-.bannerwarta > h1 {
+.bannerutama > h1 {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -372,6 +351,7 @@ iframe {
     text-align: center;
 }
 
+/*warta*/
 .kontener {
     display: flex;
     justify-content: center;
@@ -400,32 +380,6 @@ iframe {
 }
 
 /*kegiatan*/
-.bannerkegiatan {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin-top: -8px;
-}
-
-.bannerkegiatan > img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    margin-top: -8px;
-    object-position: 0 50%;
-    filter: brightness(80%);
-}
-
-.bannerkegiatan > h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-size: 25px;
-    text-align: center;
-}
-
 .jadwalkegiatan {
     display: flex;
     flex-direction: column;
@@ -558,15 +512,15 @@ iframe {
     box-shadow: 0px 2px 14px 0px lightgray;
 }
 
-.bannerks, .banneribadah, .bannerkomsel, .bannerretret {
+/*Kerjasama, ibadah, komsel, retret*/
+.banner {
     width: 100%;
     height: 100%;
     position: relative;
     margin-top: -8px;
 }
 
-/*retret*/
-.bannerretret > img {
+.banner > img {
     width: 100%;
     height: 280px;
     object-fit: cover;
@@ -575,7 +529,7 @@ iframe {
     filter: brightness(80%);
 }
 
-.bannerretret > h1 {
+.banner > h1 {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -585,20 +539,27 @@ iframe {
     text-align: center;
 }
 
-.deskripsiretret {
+.deskripsi-kegiatan {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-bottom: 40px;
 }
 
-.deskripsiretret > img {
+.deskripsi-kegiatan > p {
+    margin: 40px 100px 10px 100px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.deskripsi-kegiatan > img {
     align-self: center;
     width: 80px;
     height: 80px;
     margin-top: 150px;
 }
 
-.deskripsiretret > h1 {
+.deskripsi-kegiatan > h1 {
     font-size: 20px;
     text-align: center;
     justify-content: center;
@@ -606,180 +567,29 @@ iframe {
     margin-bottom: 150px;
 }
 
-/*komsel*/
-.bannerkomsel > img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    margin-top: -8px;
-    object-position: 0 60%;
-    filter: brightness(80%);
-}
-
-.bannerkomsel > h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-size: 40px;
-    text-align: center;
-}
-
-.deskripsikomsel {
-    display: flex;
-    flex-direction: column;
-}
-
-.deskripsikomsel > p {
-    margin: 40px 100px 10px 100px;
-    line-height: 30px;
-    font-size: 15px;
-    text-align: justify;
-}
-
-.kegiatankomsel {
+.poin-poin {
     margin: 0px 100px -25px 100px;
     line-height: 30px;
     font-size: 15px;
 }
 
-.bahankomsel {
+.framework {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
 
-.bahankomsel > h2 {
+.framework > h2 {
     text-align: center;
     justify-content: center;
     position: relative;
 }
 
-.bahankomsel > embed {
+.framework > embed {
     width: 950px;
     height: 700px;
     justify-content: center;
     position: relative;
     margin-bottom: 50px;
     margin-left: 285px;
-}
-
-.pokokdoa {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
-.pokokdoa > h2 {
-    text-align: center;
-    justify-content: center;
-    position: relative;
-}
-
-.pokokdoa > embed {
-    width: 950px;
-    height: 700px;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 50px;
-    margin-left: 285px;
-}
-
-/*Kerjasama*/
-.bannerks > img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    margin-top: -8px;
-    object-position: 0 60%;
-    filter: brightness(80%);
-}
-
-.bannerks > h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-size: 40px;
-    text-align: center;
-}
-
-.deskripsiks {
-    display: flex;
-    flex-direction: column;
-}
-
-.deskripsiks > p {
-    margin: 40px 100px 10px 100px;
-    line-height: 30px;
-    font-size: 15px;
-    text-align: justify;
-}
-
-.alatmusik {
-    margin: 0px 100px -25px 100px;
-    line-height: 30px;
-    font-size: 15px;
-}
-
-.liturgos {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
-.liturgos > h2 {
-    text-align: center;
-    justify-content: center;
-    position: relative;
-}
-
-.liturgos > embed {
-    width: 950px;
-    height: 700px;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 50px;
-    margin-left: 285px;
-}
-
-/*ibadah*/
-.banneribadah > img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    margin-top: -8px;
-    object-position: 0 60%;
-    filter: brightness(80%);
-}
-
-.banneribadah > h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-size: 40px;
-    text-align: center;
-}
-
-.deskripsiibadah {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-
-.deskripsiibadah > p {
-    margin: 40px 100px 10px 100px;
-    line-height: 30px;
-    font-size: 15px;
-    text-align: justify;
-}
-
-.tataibadah {
-    margin: 0px 100px -25px 100px;
-    line-height: 30px;
-    font-size: 15px;
 }
