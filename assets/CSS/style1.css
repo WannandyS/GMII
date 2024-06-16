@@ -357,6 +357,7 @@ iframe {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    gap: 35px;
 }
 
 .isiwarta img {
@@ -390,6 +391,11 @@ iframe {
 .jadwalkegiatan > h3 {
     float: left;
     margin-left: 300px;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 40px auto;
 }
 
 .kontener1 {
