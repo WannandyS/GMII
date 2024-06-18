@@ -1,0 +1,152 @@
+}
+body {
+   background-color: white;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 20px;
+   margin: 0;
+}
+
+footer {
+   width: 100%;
+   height: 100px;
+   background-color: #2D2D2D;
+   display: flex;
+   flex-direction: column;
+}
+
+footer > p {
+   color: white;
+   text-align: center;
+   margin-top: 30px;
+}
+
+.logo {
+   display: flex;
+   flex-direction: row;
+   width: 50px;
+   float: left;
+   margin: 10px 10px 10px 20px;
+   height: 50px;
+}
+
+nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   background-color: white;
+   padding: 1.4rem 7%;
+}
+
+nav .popup-login {
+   width: 100px;
+   height: 40px;
+   background: transparent;
+   border: 2px solid #0158C1;
+   outline: none;
+   border-radius: 6px;
+   font-size: 14px;
+   font-weight: bold;
+   margin-top: 8px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+nav .popup-login:hover {
+   background: #0158C1;
+   color: white;
+}
+
+.top-left h3 {
+   text-align: justify;
+   margin-left: 80px;
+   margin-top: 10px;
+}
+
+.top-right {
+   float: right;
+   margin-top: 12px;
+   margin-right: 240px;
+   font-weight: 500;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+nav li {
+   float: left;
+}
+
+nav li a {
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   position: relative;
+}
+
+li a:hover {
+   background-color:lightgrey;
+}
+  
+  /* Banner Utama */
+  .bannerutama {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .bannerutama img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .bannerutama h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Konten Lebih Lanjut */
+  .konten-lebih-lanjut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 2em;
+  }
+  
+  .konten-lebih-lanjut h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .konten-lebih-lanjut p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0158C1;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
